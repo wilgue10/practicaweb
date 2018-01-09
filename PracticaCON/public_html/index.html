@@ -12,12 +12,18 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
-        <form action="/action_page.php" method="post">
-            Nombres: <input type="text" name="FirstName" value="" required><br>
-            Apellidos: <input type="text" name="LastName" value="" required><br>
-            F.Nacimiento <input type="date" name="FirstName" value="" required><br>
-            Sueldo <input type="number" name="LastName" value="" required><br>
+        <form action="http://172.31.104.15:8080/UserRest/webresources/generic/saveUser" method="post">
+            Nombres: <input type="text" name="name" value="" required><br>
+            Apellidos: <input type="text" name="lastname" value="" required><br>
+            F.Nacimiento <input type="date" name="dateBorn" value="" required><br>
+            Sueldo <input type="number" name="salary" value="" required><br>
             <input type="Submit" value="Submit">
         </form>
     </body>
+    
+    <script>
+        document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
 </html>
+
+
